@@ -72,7 +72,7 @@ Let's build a blog API with django!
 | PATCH  | `/change-password`     | required | 204  | |
 | DELETE | `/sign-out`            | required | 204 | |
 | GET | `/blogs` | required | 200 - array of blogs created by that user and its comments | |
-| POST | `/blogs` | required | 201 - blogs object | |
+| POST | `/blogs` | required | 201 - blog object | |
 | GET | `/blogs/:id` | required | 200 - blog object and its comments | |
 | DELETE | `/blogs/:id` | required | 204  | |
 | PATCH | `/blogs/:id` | required | 200 - blog object and its comments | |
