@@ -10,8 +10,8 @@ Let's build a blog API with django!
 
 ### Routes
 
-- POST /sign-up - sign a user up
-- POST /sign-in - sign a user in
+- POST /sign-up 
+- POST /sign-in 
 - PATCH /changepassword (require token)
 - DELETE /sign-out (require token)
 
@@ -30,8 +30,8 @@ Let's build a blog API with django!
 
 ### Routes
 
-- POST /sign-up - sign a user up
-- POST /sign-in - sign a user in
+- POST /sign-up
+- POST /sign-in 
 - PATCH /changepassword (require token)
 - DELETE /sign-out (require token)
 
@@ -61,8 +61,8 @@ Let's build a blog API with django!
 
 ### Routes
 
-- POST /sign-up - sign a user up
-- POST /sign-in - sign a user in
+- POST /sign-up 
+- POST /sign-in 
 - PATCH /changepassword (require token)
 - DELETE /sign-out (require token)
 
@@ -72,8 +72,6 @@ Let's build a blog API with django!
 - DELETE /blogs/:id (require token)
 - PATCH /blogs/:id (require token)
 
-- GET /comments (require token)
-- POST /comments (require token)
-- GET /comments/:id (require token)
+- POST /comments (require token) - include blog id in body of request
 - DELETE /comments/:id (require token)
 - PATCH /comments/:id (require token)
