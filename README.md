@@ -10,6 +10,14 @@ Let's build a blog API with django!
 
 ### Routes
 
+| Verb   | URI Pattern            | Token    |  Response |
+|--------|------------------------|----------|-----------|
+| POST   | `/sign-up`             |          | 201 user object |
+| POST   | `/sign-in`             |          | 201 user object with token|
+| PATCH  | `/change-password`     | required | 204  |
+| DELETE | `/sign-out`            | required | 204 |
+
+
 - POST /sign-up 
 - POST /sign-in 
 - PATCH /change-password (require token)
@@ -30,16 +38,17 @@ Let's build a blog API with django!
 
 ### Routes
 
-- POST /sign-up
-- POST /sign-in 
-- PATCH /changepassword (require token)
-- DELETE /sign-out (require token)
-
-- GET /blogs (require token)
-- POST /blogs (require token)
-- GET /blogs/:id (require token)
-- DELETE /blogs/:id (require token)
-- PATCH /blogs/:id (require token)
+| Verb   | URI Pattern            | Token    |  Response |
+|--------|------------------------|----------|-----------|
+| POST   | `/sign-up`             |          | 201 - user object |
+| POST   | `/sign-in`             |          | 201 - user object with token|
+| PATCH  | `/change-password`     | required | 204  |
+| DELETE | `/sign-out`            | required | 204 |
+| GET | `/blogs` | required | 200 - array of blogs created by that user |
+| POST | `/blogs` | required | 201 - blog object |
+| GET | `/blogs/:id` | required | 200 - blog object |
+| DELETE | `/blogs/:id` | required | 204  |
+| PATCH | `/blogs/:id` | required | 200 - blog object |
 
 ## Version 3
 
@@ -61,17 +70,19 @@ Let's build a blog API with django!
 
 ### Routes
 
-- POST /sign-up 
-- POST /sign-in 
-- PATCH /changepassword (require token)
-- DELETE /sign-out (require token)
 
-- GET /blogs (require token)
-- POST /blogs (require token)
-- GET /blogs/:id (require token)
-- DELETE /blogs/:id (require token)
-- PATCH /blogs/:id (require token)
+| Verb   | URI Pattern            | Token    |  Response | Note |
+|--------|------------------------|----------|-----------|---|
+| POST   | `/sign-up`             |          | 201 - user object | |
+| POST   | `/sign-in`             |          | 201 - user object with token| |
+| PATCH  | `/change-password`     | required | 204  | |
+| DELETE | `/sign-out`            | required | 204 | |
+| GET | `/blogs` | required | 200 - array of blogs created by that user and its comments | |
+| POST | `/blogs` | required | 201 - blogs object | |
+| GET | `/blogs/:id` | required | 200 - blog object and its comments | |
+| DELETE | `/blogs/:id` | required | 204  | |
+| PATCH | `/blogs/:id` | required | 200 - blog object and its comments | |
+| POST | `/comments` | required | 201 - comment object | include blog id in body of request |
+| DELETE | `/comments/:id` | required | 204  | |
+| PATCH | `/comments/:id` | required | 200 - comment | |
 
-- POST /comments (require token) - include blog id in body of request
-- DELETE /comments/:id (require token)
-- PATCH /comments/:id (require token)
