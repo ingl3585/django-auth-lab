@@ -4,11 +4,11 @@ Let's build a blog API with django!
 
 ## Version 1
 
-### Models
+#### Models
 
 - User model
 
-### Routes
+#### Routes
 
 | Verb   | URI Pattern            | Token    |  Response |
 |--------|------------------------|----------|-----------|
@@ -19,7 +19,7 @@ Let's build a blog API with django!
 
 ## Version 2
 
-### Models
+#### Models
 
 - User model
 
@@ -30,7 +30,7 @@ Let's build a blog API with django!
   - updated_at/created_at
 
 
-### Routes
+#### Routes
 
 | Verb   | URI Pattern            | Token    |  Response |
 |--------|------------------------|----------|-----------|
@@ -46,7 +46,7 @@ Let's build a blog API with django!
 
 ## Version 3
 
-### Models
+#### Models
 
 - User model
 
@@ -62,7 +62,7 @@ Let's build a blog API with django!
   - author : user reference
   - updated_at/created_at
 
-### Routes
+#### Routes
 
 
 | Verb   | URI Pattern            | Token    |  Response | Note |
