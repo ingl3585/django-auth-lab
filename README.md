@@ -12,7 +12,7 @@ Let's build a blog API with django!
 
 - POST /sign-up 
 - POST /sign-in 
-- PATCH /changepassword (require token)
+- PATCH /change-password (require token)
 - DELETE /sign-out (require token)
 
 ## Version 2
