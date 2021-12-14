@@ -17,12 +17,6 @@ Let's build a blog API with django!
 | PATCH  | `/change-password`     | required | 204  |
 | DELETE | `/sign-out`            | required | 204 |
 
-
-- POST /sign-up 
-- POST /sign-in 
-- PATCH /change-password (require token)
-- DELETE /sign-out (require token)
-
 ## Version 2
 
 ### Models
